@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .app-header {
+        @apply container mx-auto h-16 flex items-center justify-between bg-white
+    }
+}
