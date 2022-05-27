@@ -1,26 +1,44 @@
 <template lang="">
-    <button>
-        <slot></slot>
-    </button>
+  <button
+    class="button"
+    :class="
+      backgroundType === 'gray'
+        ? 'button-gray'
+        : null || backgroundType === 'lightBlue'
+        ? 'button-light-blue'
+        : null || backgroundType === 'primary'
+        ? 'button-primary'
+        : null || backgroundType === 'danger'
+        ? 'button-danger'
+        : null
+    "
+  >
+    <span v-if="icon" :class="iconName" />
+    <slot></slot>
+  </button>
 </template>
 <script>
 export default {
-    // eslint-disable-next-line vue/multi-word-component-names
-    name: "Button",
-    props:{
-        icon:{
-            type: String,
-            require: false,
-            default: null
-        },
-        background:{
-            type: String,
-            require: false,
-            default: null
-        }
-    }
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: 'Button',
+  props: {
+    icon: {
+      type: Boolean,
+      default: false,
+    },
+    iconName: {
+      type: String,
+      default: null,
+    },
+    background: {
+      type: Boolean,
+      default: false,
+    },
+    backgroundType: {
+      type: String,
+      default: 'gray',
+    },
+  },
 }
 </script>
-<style lang="">
-    
-</style>
+<style lang=""></style>

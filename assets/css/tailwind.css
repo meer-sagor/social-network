@@ -2,8 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  p {
+    font-weight: 300;
+  }
+}
 @layer components {
-    .app-header {
-        @apply container mx-auto h-16 flex items-center justify-between bg-white
-    }
+  .app-header {
+    @apply md:px-[5%] md:h-16 md:flex md:items-center md:justify-between md:bg-white;
+  }
+  /* below style about image and image size */
+  .avatar {
+    @apply rounded;
+  }
+  .avatar-sm {
+    @apply h-9 w-9 rounded-full;
+  }
+  .avatar-md {
+    @apply h-16 w-auto;
+  }
+  /* below style about button and button size */
+  .button {
+    @apply px-4 py-2 text-sm font-medium leading-5 rounded;
+  }
+  .button-gray {
+    @apply bg-gray-100 text-gray-800 hover:text-blue-500;
+  }
+  .button-light-blue {
+    @apply bg-blue-200 text-blue-500 hover:text-white hover:bg-blue-600;
+  }
+  .button-primary {
+    @apply bg-blue-500 text-white hover:text-white hover:bg-blue-600;
+  }
+  .button-danger {
+    @apply bg-red-500 text-white hover:text-white hover:bg-red-600;
+  }
+  /* Short Profile  */
+  .short-profile__cover--photo {
+    @apply md:bg-blue-300 md:h-16 md:w-full;
+  }
+  .short-profile-container {
+    @apply md:rounded md:px-4;
+  }
+  .short-profile {
+    @apply md:p-1;
+  }
+  .short-profile-info {
+    @apply md:text-center md:text-gray-400;
+  }
+  .short-profile-avatar {
+    @apply md:flex md:justify-center md:items-center md:mt-[-2rem];
+  }
+  .short-profile-avatar img {
+    @apply md:bg-red-300 p-1;
+  }
 }

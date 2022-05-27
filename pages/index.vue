@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-gray-100 flex justify-between items-center">
-    <div class="md:w-1/3  md:rounded-md md:p-4 bg-gray-400">
-      Left aside
-    </div>
+  <section class="flex justify-between items-start">
+    <aside class="md:w-1/3 sticky top-0">
+      <LeftAside/>
+    </aside>
     <div class="md:w-full md:mr-7 md:ml-7 bg-gray-600">
       story
     </div>
@@ -10,7 +10,7 @@
       right aside
     </div>
 
-  </div>
+  </section>
 </template>
 
 <script>

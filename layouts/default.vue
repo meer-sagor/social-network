@@ -1,7 +1,7 @@
 <template>
-  <div class="container mx-auto bg-gray-100">
+  <div class="bg-gray-100">
     <AppHeader />
-    <main>
+    <main class="container mx-auto mt-5 ">
       <nuxt />
     </main>
     <!-- <AppFooter /> -->
