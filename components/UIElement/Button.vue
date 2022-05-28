@@ -15,14 +15,16 @@
         : null
     "
   >
-    <span v-if="icon" :class="iconName" />
+    <Icon v-if="icon" :icon="iconName" class="mr-2 text-lg" />
     <slot></slot>
   </button>
 </template>
 <script>
+import { Icon } from '@iconify/vue2'
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Button',
+  components: { Icon },
   props: {
     icon: {
       type: Boolean,

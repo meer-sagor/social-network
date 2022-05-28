@@ -70,7 +70,7 @@
     </ul>
     <Link class="mt-4">
       <Button
-        class="w-full"
+        class="w-full flex items-center justify-center"
         :background="true"
         background-type="primary-outline"
       >

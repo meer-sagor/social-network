@@ -32,7 +32,7 @@
   }
   /* below style about button and button size */
   .button {
-    @apply px-4 py-2 text-sm font-medium leading-5 rounded;
+    @apply flex items-center px-4 py-2 text-sm font-medium leading-5 rounded;
   }
   .button-gray {
     @apply bg-gray-100 text-gray-800 hover:text-blue-500;
@@ -64,5 +64,16 @@
   }
   .short-profile-avatar img {
     @apply md:bg-red-300 p-1;
+  }
+  /* Input Group */
+  .form-group {
+    @apply w-full mb-5;
+  }
+  .form-group label{
+    @apply mb-2 block font-light;
+  }
+  .form-group input,
+  .form-group textarea {
+    @apply w-full p-2 border-gray-300 border-2 rounded-lg resize-none focus:border-blue-200 focus:outline-none ;
   }
 }

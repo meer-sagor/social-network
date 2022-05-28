@@ -1,10 +1,13 @@
 <template lang="">
   <div class="form-group">
-    <label :id="id"> {{ label }} </label>
+    <label v-if="label" :id="id">
+      {{ label }}
+      <span v-if="required" :class="required && 'text-red-500'">*</span>
+    </label>
     <input
       :value="modelValue"
       :placeholder="placeholder"
-      :require="require"
+      :required="required"
       @input="$emit('update:modelValue', $event.target.value)"
     />
   </div>
@@ -30,7 +33,7 @@ export default {
       type: String,
       default: '',
     },
-    require: {
+    required: {
       type: Boolean,
       default: false,
     },
