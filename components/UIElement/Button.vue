@@ -10,6 +10,8 @@
         ? 'button-primary'
         : null || backgroundType === 'danger'
         ? 'button-danger'
+        : null || backgroundType === 'primary-outline'
+        ? 'button-primary__outline'
         : null
     "
   >

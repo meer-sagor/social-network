@@ -4,9 +4,15 @@ export default {
   title: 'Link',
   components: Link
 }
-const Template = (args, { argTypes }) => ({})
+const Template = (args, { argTypes }) => ({
+  components: {Link},
+  props:Object.keys(argTypes),
+  template: '<Link v-bind="$props"/>'
+})
 
 export const Primary = Template.bind({});
 Primary.args = {
-    variant: 'primary',
-  };
+    color: 'blue',
+    label: "Links",
+    size:"md, lg, sm"
+};

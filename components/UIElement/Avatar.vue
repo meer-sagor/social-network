@@ -22,7 +22,7 @@ export default {
     src: {
       type: String,
       require: false,
-      default: null,
+      default: 'https://avatars.githubusercontent.com/u/78520766?v=4',
     },
     alt: {
       type: String,

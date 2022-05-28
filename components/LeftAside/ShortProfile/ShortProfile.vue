@@ -1,16 +1,15 @@
 <template lang="">
-  <div class="short-profile-container">
+  <div class="md:rounded">
     <div class="short-profile">
       <div class="short-profile-avatar">
         <Avatar
-          src="https://avatars.githubusercontent.com/u/78520766?v=4"
           alt="profile pic"
           size="md"
         />
       </div>
       <div class="short-profile-info">
-        <h2 class="text-black hover:text-blue-500 hover:cursor-pointer mt-4">
-          Name
+        <h2 class="text-black font-bold hover:text-blue-500 hover:cursor-pointer mt-4">
+          Meer Sagor
         </h2>
         <p class="md:text-sm">Web Developer at Webestica</p>
         <p class="md:mt-5">
